@@ -38,7 +38,7 @@ class KNN:
         occurence_count = Counter(labels) 
         return occurence_count.most_common(1)[0][0]
 
-    #Returns test data and classification hypotheses
+    #Returns classification hypotheses
     def predict(self, X):
         #Initialize an empty hypotheses list
         hypotheses = []
@@ -57,5 +57,5 @@ class KNN:
         #Convert to np array
         hypotheses = np.array(hypotheses)
 
-        return X, hypotheses
+        return hypotheses
 
