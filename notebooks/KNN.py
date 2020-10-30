@@ -58,4 +58,3 @@ class KNN:
         hypotheses = np.array(hypotheses)
 
         return hypotheses
-
